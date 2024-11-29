@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>João Ribeiro's Website</title>
+    <link href="./output.css" rel="stylesheet">
 </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#skills">My Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
+<body class="bg-zinc-800 text-slate-50 ">
+    <nav class="flex justify-center">
+        <ul class="flex flex-row gap-x-8">
+            <li class="hover:text-amber-400"><a href="#profile">Profile</a></li>
+            <li class="hover:text-amber-400"><a href="#skills">My Skills</a></li>
+            <li class="hover:text-amber-400"><a href="#portfolio">Portfolio</a></li>
+            <li class="hover:text-amber-400"><a href="#experience">Experience</a></li>
+            <li class="hover:text-amber-400"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <h1>Hi! I'm <span>João Ribeiro</span></h1>
-    <h2>Computer Engineering Graduate</h2>
-    <img src="./images/personal.png"/>
-    <a href="#contact">Contact me!</a>
+    <div class="inline-block">
+        <h1>Hi! I'm <span class="text-amber-400 font-serif">João Ribeiro</span></h1>
+        <h2>Computer Engineering Graduate</h2>
+        <a href="#contact">Contact me!</a>
+    </div>
+    <img src="./images/personal.png" class="inline-block"/>
+    
     <section id="profile">
         <h3>Profile</h3>
         <p>I am a recently graduated Computer Engineer with a passion for
