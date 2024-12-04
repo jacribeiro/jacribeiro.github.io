@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-zinc-800 text-slate-50 ">
-    <nav class="flex justify-center">
+    <nav class="flex justify-center bg-zinc-700">
         <ul class="flex flex-row gap-x-8 py-8 font-menu text-lg">
             <li class="hover:text-amber-400 hover:underline hover:underline-offset-8"><a href="#profile">Profile</a></li>
             <li class="hover:text-amber-400 hover:underline hover:underline-offset-8"><a href="#skills">My Skills</a></li>
@@ -19,13 +19,14 @@
             <li class="hover:text-amber-400 hover:underline hover:underline-offset-8"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <div class="inline-block">
-        <h1>Hi! I'm <span class="text-amber-400 font-serif">João Ribeiro</span></h1>
-        <h2>Computer Engineering Graduate</h2>
-        <a href="#contact">Contact me!</a>
-    </div>
-    <img src="./images/personal.png" class="inline-block"/>
-    
+    <header class="flex justify-center w-full bg-zinc-700 drop-shadow-lg">
+        <div class="inline-block self-center basis-2/6">
+            <h1>Hi! I'm <span class="text-amber-400 font-serif">João Ribeiro</span></h1>
+            <h2>Computer Engineering Graduate</h2>
+            <a href="#contact">Contact me!</a>
+        </div>
+        <img src="./images/personal.png" class="basis-4/6"/>
+    </header>
     <section id="profile">
         <h3>Profile</h3>
         <p>I am a recently graduated Computer Engineer with a passion for
