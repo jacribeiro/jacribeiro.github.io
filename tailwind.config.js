@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         menu: 'Oswald, sans',
+        header: 'Merriweather, serif'
       }
     },
   },
