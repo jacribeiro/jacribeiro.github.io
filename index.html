@@ -10,22 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link href="./output.css" rel="stylesheet">
 </head>
-<body class="bg-zinc-800 text-slate-50 ">
-    <nav class="flex justify-center bg-zinc-700">
+<body class="bg-oxford text-slate-50 ">
+    <nav class="flex justify-center bg-berkeley">
         <ul class="flex flex-row gap-x-8 py-8 font-menu text-lg">
-            <li class="hover:text-amber-400 hover:underline hover:underline-offset-8"><a href="#profile">Profile</a></li>
-            <li class="hover:text-amber-400 hover:underline hover:underline-offset-8"><a href="#skills">My Skills</a></li>
-            <li class="hover:text-amber-400 hover:underline hover:underline-offset-8"><a href="#portfolio">Portfolio</a></li>
-            <li class="hover:text-amber-400 hover:underline hover:underline-offset-8"><a href="#experience">Experience</a></li>
-            <li class="hover:text-amber-400 hover:underline hover:underline-offset-8"><a href="#contact">Contact</a></li>
+            <li class="hover:text-highlight hover:underline hover:underline-offset-8"><a href="#profile">Profile</a></li>
+            <li class="hover:text-highlight hover:underline hover:underline-offset-8"><a href="#skills">My Skills</a></li>
+            <li class="hover:text-highlight hover:underline hover:underline-offset-8"><a href="#portfolio">Portfolio</a></li>
+            <li class="hover:text-highlight hover:underline hover:underline-offset-8"><a href="#experience">Experience</a></li>
+            <li class="hover:text-highlight hover:underline hover:underline-offset-8"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <header class="grid grid-cols-2 grid-rows-1 justify-center w-full bg-zinc-700 drop-shadow-lg font-header">
+    <header class="grid grid-cols-2 grid-rows-1 justify-center w-full bg-berkeley drop-shadow-lg font-header">
         <div class="row-start-1 col-start-1 justify-self-end self-center flex flex-col gap-1">
-            <h1 class="text-xl">Hi! I'm <span class="text-amber-400 text-xl">João Ribeiro</span></h1>
-            <h2 class="text-xl">Computer Engineering Graduate</h2>
+            <h1 class="text-xl">Hi! I'm <span class="text-highlight text-4xl">João Ribeiro</span></h1>
+            <h2 class="text-xl text-slate-300">Computer Engineering Graduate</h2>
             <a href="#contact" 
-            class="px-4 py-2 border-2 border-solid border-amber-400 rounded-lg text-amber-400 font-menu text-lg self-start my-1 hover:bg-amber-400 hover:text-zinc-700">Contact me!</a>
+            class="px-4 py-2 border-2 border-solid border-highlight rounded-lg text-highlight font-menu text-lg self-start my-1 hover:bg-highlight hover:text-berkeley">Contact me!</a>
         </div>
         <img src="./images/personal.png" class="row-start-1 col-start-2"/>
     </header>
@@ -48,16 +48,16 @@
     </section>
     <section id="skills">
         <h3>My Skills</h3>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>C/C++</li>
-            <li>Flutter</li>
-            <li>Git & GitHub</li>
-            <li>PostgreSQL</li>
+        <ul class="flex flex-row gap-1">
+            <li class="border-solid border-2 border-highlight hover:bg-highlight hover:text-zinc- cursor-default">HTML & CSS</li>
+            <li class="border-solid border-2 border-highlight hover:bg-highlight hover:text-zinc- cursor-default">JavaScript</li>
+            <li class="border-solid border-2 border-highlight hover:bg-highlight hover:text-zinc- cursor-default">React</li>
+            <li class="border-solid border-2 border-highlight hover:bg-highlight hover:text-zinc- cursor-default">Python</li>
+            <li class="border-solid border-2 border-highlight hover:bg-highlight hover:text-zinc- cursor-default">Java</li>
+            <li class="border-solid border-2 border-highlight hover:bg-highlight hover:text-zinc- cursor-default">C/C++</li>
+            <li class="border-solid border-2 border-highlight hover:bg-highlight hover:text-zinc- cursor-default">Flutter</li>
+            <li class="border-solid border-2 border-highlight hover:bg-highlight hover:text-zinc- cursor-default">Git & GitHub</li>
+            <li class="border-solid border-2 border-highlight hover:bg-highlight hover:text-zinc- cursor-default">PostgreSQL</li>
         </ul>
     </section>
     <section id="portfolio">
@@ -107,7 +107,7 @@
             <li>Instagram</li>
         </ul>
     </aside>
-    <footer>
+    <footer class="bg-berkeley drop-shadow-md">
         <p>Looking forward to creating innovative solutions together. Get in touch!</p>
     </footer>
 </body>

@@ -6,7 +6,12 @@ module.exports = {
       fontFamily: {
         menu: 'Oswald, sans',
         header: 'Merriweather, serif'
-      }
+      },
+      colors: {
+        'oxford': '#102342',
+        'berkeley': '#183463',
+        'highlight': '#DA872F'
+      },
     },
   },
   plugins: [],
