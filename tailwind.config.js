@@ -10,8 +10,8 @@ module.exports = {
       colors: {
         'dark': '#504746',
         'medium': '#6D615F',
-        'light': '#F4F7F5',
-        'highlight': '#F3B61F'
+        'light': '#F4F7F5', 
+        'highlight': '#F3B61F' //azul - 80A4ED amarelo - f3b61f
       },
     },
   },
