@@ -6,32 +6,34 @@
     <title>João Ribeiro's Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="./output.css" rel="stylesheet">
 </head>
-<body class="bg-oxford text-slate-50 ">
-    <nav class="flex justify-center bg-berkeley">
-        <ul class="flex flex-row gap-x-8 py-8 font-menu text-lg">
-            <li class="hover:text-highlight hover:underline hover:underline-offset-8"><a href="#profile">Profile</a></li>
-            <li class="hover:text-highlight hover:underline hover:underline-offset-8"><a href="#skills">My Skills</a></li>
-            <li class="hover:text-highlight hover:underline hover:underline-offset-8"><a href="#portfolio">Portfolio</a></li>
-            <li class="hover:text-highlight hover:underline hover:underline-offset-8"><a href="#experience">Experience</a></li>
-            <li class="hover:text-highlight hover:underline hover:underline-offset-8"><a href="#contact">Contact</a></li>
+<body class="bg-dark text-slate-50 drop-shadow-md w-full">
+    <nav class="flex justify-center bg-medium">
+        <ul class="flex flex-row gap-x-8 py-8 font-main font-semibold text-lg">
+            <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8"><a href="#profile">Profile</a></li>
+            <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8"><a href="#skills">My Skills</a></li>
+            <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8"><a href="#portfolio">Portfolio</a></li>
+            <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8"><a href="#experience">Experience</a></li>
+            <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <header class="grid grid-cols-2 grid-rows-1 justify-center w-full bg-berkeley drop-shadow-lg font-header">
+    <header class="grid grid-cols-2 grid-rows-1 justify-center w-full bg-medium drop-shadow-lg font-header">
         <div class="row-start-1 col-start-1 justify-self-end self-center flex flex-col gap-1">
             <h1 class="text-xl">Hi! I'm <span class="text-highlight text-4xl">João Ribeiro</span></h1>
-            <h2 class="text-xl text-slate-300">Computer Engineering Graduate</h2>
+            <h2 class="text-xl text-light">Computer Engineering Graduate</h2>
             <a href="#contact" 
-            class="px-4 py-2 border-2 border-solid border-highlight rounded-lg text-highlight font-menu text-lg self-start my-1 hover:bg-highlight hover:text-berkeley">Contact me!</a>
+            class="px-4 py-2 border-2 border-solid border-highlight rounded-lg text-highlight font-main font-bold text-lg self-start my-1 hover:bg-highlight hover:text-medium">Contact me!</a>
         </div>
-        <img src="./images/personal.png" class="row-start-1 col-start-2"/>
+        <img src="./images/personal.png" class="row-start-1 col-start-2 justify-self-end"/>
     </header>
-    <section id="profile">
-        <h3>Profile</h3>
-        <p>I am a recently graduated Computer Engineer with a passion for
+    <main class="mt-20 font-main mx-0 my-auto">
+        <section id="profile" class="w-3/6 mx-0 my-auto">
+        <h3 class="font-header text-2xl">Profile</h3>
+        <p class="text-justify">I am a recently graduated Computer Engineer with a passion for
             solving real-world problems through innovative software and
             intelligent systems. My interests span Web and Application 
             Development, Artificial Intelligence, and efficient software
@@ -45,61 +47,63 @@
             of work, I enjoy hiking, cinema, and board games, activities that
             fuel my creativity and strategic thinking.
         </p>
-    </section>
-    <section id="skills">
-        <h3>My Skills</h3>
-        <ul class="flex flex-row gap-1">
-            <li class="border-solid border-2 border-highlight hover:bg-highlight hover:text-zinc- cursor-default">HTML & CSS</li>
-            <li class="border-solid border-2 border-highlight hover:bg-highlight hover:text-zinc- cursor-default">JavaScript</li>
-            <li class="border-solid border-2 border-highlight hover:bg-highlight hover:text-zinc- cursor-default">React</li>
-            <li class="border-solid border-2 border-highlight hover:bg-highlight hover:text-zinc- cursor-default">Python</li>
-            <li class="border-solid border-2 border-highlight hover:bg-highlight hover:text-zinc- cursor-default">Java</li>
-            <li class="border-solid border-2 border-highlight hover:bg-highlight hover:text-zinc- cursor-default">C/C++</li>
-            <li class="border-solid border-2 border-highlight hover:bg-highlight hover:text-zinc- cursor-default">Flutter</li>
-            <li class="border-solid border-2 border-highlight hover:bg-highlight hover:text-zinc- cursor-default">Git & GitHub</li>
-            <li class="border-solid border-2 border-highlight hover:bg-highlight hover:text-zinc- cursor-default">PostgreSQL</li>
-        </ul>
-    </section>
-    <section id="portfolio">
-        <h3>Portfolio</h3>
-        <ul>
-            <li>ACM-DEI Website</li>
-            <li>Notes App</li>
-            <li>Beautiful Shapes</li>
-        </ul>
-    </section>
-    <section id="experience">
-        <h3>Experience</h3>
-        <p>Here's a short summary of recent work experiences that shaped my technical and problem-solving skills</p>
-        <ul>
-            <li>
-                <h4>Student Collaborator - Department of Informatics Engineering, FEUP
-                    <span>(Apr 2023 - Jun 2024)</span>
-                </h4>
-                <ul>
-                    <li>Developed a custom website mapping ACM topics to research subareas.</li>
-                    <li>Conducted usability testing for MOOCs, improving learning platforms.</li>
-                    <li>Updated departmental micro-websites, ensuring accurate information and details.</li>
-                </ul>
-            </li>
-            <li>
-                <h4>Harvest Internship - Mainova Winery <span>(Aug 2024 - Nov 2024)</span></h4>
-                <ul>
-                    <li>Supported process optimization, through developement of communication and
-                        teamwork in a fast-paced production environment.
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h3>Contact Me</h3>
-        <ul>
-            <li>j.alberto.cribeiro@gmail.com</li>
-            <li>(+351) 912 644 870</li>
-            <li>Porto, Portugal</li>
-        </ul>
-    </section>
+        </section>
+        <section id="skills">
+            <h3 class="font-header text-2xl">My Skills</h3>
+            <ul class="flex flex-row gap-1">
+                <li class="border-solid border-2 border-highlight hover:bg-highlight hover:border-highlight hover:text-zinc- cursor-default">HTML & CSS</li>
+                <li class="border-solid border-2 border-highlight hover:bg-highlight hover:border-highlight hover:text-zinc- cursor-default">JavaScript</li>
+                <li class="border-solid border-2 border-highlight hover:bg-highlight hover:border-highlight hover:text-zinc- cursor-default">React</li>
+                <li class="border-solid border-2 border-highlight hover:bg-highlight hover:border-highlight hover:text-zinc- cursor-default">Python</li>
+                <li class="border-solid border-2 border-highlight hover:bg-highlight hover:border-highlight hover:text-zinc- cursor-default">Java</li>
+                <li class="border-solid border-2 border-highlight hover:bg-highlight hover:border-highlight hover:text-zinc- cursor-default">C/C++</li>
+                <li class="border-solid border-2 border-highlight hover:bg-highlight hover:border-highlight hover:text-zinc- cursor-default">Flutter</li>
+                <li class="border-solid border-2 border-highlight hover:bg-highlight hover:border-highlight hover:text-zinc- cursor-default">Git & GitHub</li>
+                <li class="border-solid border-2 border-highlight hover:bg-highlight hover:border-highlight hover:text-zinc- cursor-default">PostgreSQL</li>
+            </ul>
+        </section>
+        <section id="portfolio">
+            <h3 class="font-header text-2xl">Portfolio</h3>
+            <ul>
+                <li>ACM-DEI Website</li>
+                <li>Notes App</li>
+                <li>Beautiful Shapes</li>
+            </ul>
+        </section>
+        <section id="experience">
+            <h3 class="font-header text-2xl">Experience</h3>
+            <p>Here's a short summary of recent work experiences that shaped my technical and problem-solving skills</p>
+            <ul>
+                <li>
+                    <h4>Student Collaborator - Department of Informatics Engineering, FEUP
+                        <span class="italic">(Apr 2023 - Jun 2024)</span>
+                    </h4>
+                    <ul>
+                        <li>Developed a custom website mapping ACM topics to research subareas.</li>
+                        <li>Conducted usability testing for MOOCs, improving learning platforms.</li>
+                        <li>Updated departmental micro-websites, ensuring accurate information and details.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Harvest Internship - Mainova Winery <span class="italic">(Aug 2024 - Nov 2024)</span></h4>
+                    <ul>
+                        <li>Supported process optimization, through developement of communication and
+                            teamwork in a fast-paced production environment.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h3 class="font-header text-2xl">Contact Me</h3>
+            <ul>
+                <li>j.alberto.cribeiro@gmail.com</li>
+                <li>(+351) 912 644 870</li>
+                <li>Porto, Portugal</li>
+            </ul>
+        </section>
+    </main>
+    
     <aside>
         <ul>
             <li>Linkedin</li>
@@ -107,7 +111,7 @@
             <li>Instagram</li>
         </ul>
     </aside>
-    <footer class="bg-berkeley drop-shadow-md">
+    <footer class="bg-medium">
         <p>Looking forward to creating innovative solutions together. Get in touch!</p>
     </footer>
 </body>

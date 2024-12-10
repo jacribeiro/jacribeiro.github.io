@@ -4,13 +4,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        menu: 'Oswald, sans',
-        header: 'Merriweather, serif'
+        header: 'Merriweather, serif',
+        main: 'Roboto Condensed, sans'
       },
       colors: {
-        'oxford': '#102342',
-        'berkeley': '#183463',
-        'highlight': '#DA872F'
+        'dark': '#504746',
+        'medium': '#6D615F',
+        'light': '#F4F7F5',
+        'highlight': '#F3B61F'
       },
     },
   },
