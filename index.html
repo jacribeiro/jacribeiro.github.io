@@ -23,8 +23,8 @@
     </nav>
     <header class="grid grid-cols-2 grid-rows-1 justify-center w-full bg-medium drop-shadow-lg font-header">
         <div class="row-start-1 col-start-1 justify-self-end self-center flex flex-col gap-1">
-            <h1 class="text-xl">Hi! I'm <span class="text-highlight text-4xl">João Ribeiro</span></h1>
-            <h2 class="text-xl text-light">Computer Engineering Graduate</h2>
+            <h1 class="text-2xl">Hi! I'm <span class="text-highlight text-6xl">João Ribeiro</span></h1>
+            <h2 class="font-main text-2xl text-light">Computer Engineering Graduate</h2>
             <a href="#contact" 
             class="px-4 py-2 border-2 border-solid border-highlight rounded-lg text-highlight font-main font-bold text-lg self-start my-1 hover:bg-highlight hover:text-light">Contact me!</a>
         </div>
@@ -32,9 +32,9 @@
     </header>
     <main class="mt-20 font-main w-full">
         <section id="profile" class="container w-4/5 mx-auto">
-            <h3 class="font-header text-4xl md:text-3xl font-semibold">Profile</h3>
-            <hr class="bg-highlight h-1 w-64 border-0 drop-shadow-sm hidden md:block">
-            <p class="text-justify text-lg mt-4">I am a recently graduated Computer Engineer with a passion for
+            <h3 class="font-header font-semibold text-4xl md:text-3xl ">Profile</h3>
+            <hr class="bg-highlight h-1 w-64 border-0 hidden md:block">
+            <p class="text-justify text-2xl md:text-lg mt-4">I am a recently graduated Computer Engineer with a passion for
                 solving real-world problems through innovative software and
                 intelligent systems. My interests span Web and Application 
                 Development, Artificial Intelligence, and efficient software
@@ -52,10 +52,9 @@
                 activities that fuel my creativity and strategic thinking.
             </p>
         </section>
-        <section id="skills" class="container mx-auto w-4/5 mt-20">
+        <section id="skills" class="container mx-auto w-4/5 mt-20 flex flex-col justify-center items-center">
             <h3 class="font-header font-semibold text-3xl ">My Skills</h3>
-            <hr class="bg-highlight h-1 w-64 border-0 drop-shadow-sm">
-            <ul class="flex flex-row gap-1">
+            <ul class="flex flex-row gap-1 mt-4">
                 <li class="bg-medium rounded-sm hover:bg-highlight hover:border-highlight hover:text-zinc- cursor-default">HTML & CSS</li>
                 <li class="bg-medium rounded-sm hover:bg-highlight hover:border-highlight hover:text-zinc- cursor-default">JavaScript</li>
                 <li class="bg-medium rounded-sm hover:bg-highlight hover:border-highlight hover:text-zinc- cursor-default">React</li>
@@ -67,30 +66,42 @@
                 <li class="bg-medium rounded-sm hover:bg-highlight hover:border-highlight hover:text-zinc- cursor-default">PostgreSQL</li>
             </ul>
         </section>
-        <section id="portfolio" class="container mx-auto w-4/5 mt-20">
+        <section id="portfolio" class="container mx-auto w-4/5 mt-20 flex flex-col justify-center items-center">
             <h3 class="font-header font-semibold text-3xl mx-auto">Portfolio</h3>
-            <ul class="flex flex-row flex-wrap gap-4">
+            <ul class="flex flex-row flex-wrap gap-4 mt-4">
                 <li class="group w-56 h-56 bg-medium rounded-md relative flex items-center justify-center cursor-default">
-                    <img src="./images/acm_dei.png" class="w-3/5 h-auto opacity-100 rounded-md transition-opacity duration-300 ease-linear group-hover:opacity-30" alt="ACM-DEI Website">
-                    <div class="w-4/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-300 ease-linear group-hover:opacity-100">
-                        <a href="https://github.com/jacribeiro/ACM-DEI-Website/"><div class="bg-highlight px-4 py-2 rounded-sm text-center">ACM-DEI Website</div></a>
+                    <img src="./images/acm_dei.png" class="w-3/5 h-auto opacity-100 rounded-md transition-opacity duration-300 ease-in group-hover:opacity-30" alt="ACM-DEI Website">
+                    <div class="w-4/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-300 ease-in group-hover:opacity-100">
+                        <a href="https://github.com/jacribeiro/ACM-DEI-Website/">
+                            <div class="bg-highlight px-4 py-2 rounded-sm text-center">ACM-DEI Website</div>
+                        </a>
                     </div>
                 </li>
-                <li class="w-56 h-56 bg-slate-200 rounded-sm">
-                    <img alt="Notes App">
-                    <div>Notes App</div>
+                <li class="group w-56 h-56 bg-medium rounded-md relative flex items-center justify-center cursor-default">
+                    <img src="./images/notes_app.png" class="w-3/5 h-auto opacity-100 rounded-md transition-opacity duration-300 ease-in group-hover:opacity-30" alt="Notes App">
+                    <div class="w-4/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-300 ease-in group-hover:opacity-100">
+                        <a href="https://github.com/jacribeiro/NotesApp/">
+                            <div class="bg-highlight px-4 py-2 rounded-sm text-center">Notes App</div>
+                        </a>
+                    </div>
                 </li>
-                <li class="w-56 h-56 bg-slate-200 rounded-sm">
-                    <img alt="Beautiful Shapes">
-                    <div>Beautiful Shapes</div>
+                <li class="group w-56 h-56 bg-medium rounded-md relative flex items-center justify-center cursor-default">
+                    <img src="./images/shapes.png" class="w-3/5 h-auto opacity-100 rounded-md transition-opacity duration-300 ease-in group-hover:opacity-30" alt="Beautiful Shapes">
+                    <div class="w-4/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-300 ease-in group-hover:opacity-100">
+                        <a href="https://github.com/jacribeiro/beautiful_shapes">
+                            <div class="bg-highlight px-4 py-2 rounded-sm text-center">Beautiful Shapes</div>
+                        </a>
+                    </div>
                 </li>
             </ul>
         </section>
-        <section id="experience" class="container mx-auto w-4/5 mt-20">
-            <h3 class="font-header font-semibold text-3xl">Experience</h3>
-            <hr class="bg-highlight h-1 w-64 border-0 drop-shadow-sm">
-            <p>Here's a short summary of recent work experiences that shaped my technical and problem-solving skills</p>
-            <ul>
+        <section id="experience" class="w-full mt-20 bg-medium">
+            <header class="w-4/5 container mx-auto">
+                <h3 class="font-header font-semibold text-4xl md:text-3xl">Experience</h3>
+                <hr class="bg-highlight h-1 w-64 border-0 hidden md:block">
+            </header>
+            <p class="w-4/5 container mx-auto mt-4">Here's a short summary of recent work experiences that shaped my technical and problem-solving skills:</p>
+            <ul class="w-4/5 container mx-auto">
                 <li>
                     <h4>Student Collaborator - Department of Informatics Engineering, FEUP
                         <span class="italic">(Apr 2023 - Jun 2024)</span>
