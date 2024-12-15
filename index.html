@@ -33,9 +33,9 @@
     </header>
     <main class="mt-20 font-main w-full">
         <section id="profile" class="container w-4/5 mx-auto">
-            <h3 class="font-header font-semibold text-4xl md:text-3xl ">Profile</h3>
+            <h3 class="font-header font-semibold text-3xl md:text-4xl ">Profile</h3>
             <hr class="bg-highlight h-1 w-64 border-0 hidden md:block">
-            <p class="text-justify text-2xl md:text-lg mt-4">I am a recently graduated Computer Engineer with a passion for
+            <p class="text-justify text-lg md:text-2xl mt-4">I am a recently graduated Computer Engineer with a passion for
                 solving real-world problems through innovative software and
                 intelligent systems. My interests span Web and Application 
                 Development, Artificial Intelligence, and efficient software
@@ -54,29 +54,51 @@
             </p>
         </section>
         <section id="skills" class="container mx-auto w-4/5 mt-20 flex flex-col justify-center items-center">
-            <h3 class="font-header font-semibold text-3xl ">My Skills</h3>
-            <ul class="flex flex-row gap-1 mt-4">
-                <li class="box-border w-1/3 flex flex-col items-center gap-2 bg-medium rounded-md px-3 py-6 hover:border-highlight hover:border-2 hover:border-solid hover:text-highlight cursor-default">
-                    <div class="flex flex-row -space-x-5">
-                        <img src="images/icons/html-5.svg" class="w-20 h-auto" alt="HTML icon">
-                        <img src="images/icons/css.svg" class="w-20 h.auto pt-1" alt="CSS icon">
+            <h3 class="font-header font-semibold text-3xl">My Skills</h3>
+            <ul class="flex flex-row flex-wrap justify-center gap-2 sm:gap-1 md:gap-4 mt-4">
+                <li class="box-border w-3/5 sm:w-1/2 md:w-1/3 lg:w-48 aspect-square flex flex-col justify-center items-center gap-6 bg-medium rounded-md p-3 border-2 border-transparent hover:border-highlight hover:text-highlight transition-colors duration-200 cursor-default">
+                    <div class="flex justify-center items-center">
+                        <img src="images/icons/html-5.svg" class="w-1/2 lg:w-24 pl-4 flex-shrink-0" alt="HTML icon">
+                        <img src="images/icons/css.svg" class="w-1/2 lg:w-24 pr-4 flex-shrink-0 relative top-[3px] lg:top-0.5" alt="CSS icon">
                     </div>
-                    
-                    HTML & CSS
+                    <p class="text-lg">HTML & CSS</p>
                 </li>
-                <li class="bg-medium rounded-sm hover:bg-highlight hover:border-highlight hover:text-zinc- cursor-default">JavaScript</li>
-                <li class="bg-medium rounded-sm hover:bg-highlight hover:border-highlight hover:text-zinc- cursor-default">React</li>
-                <li class="bg-medium rounded-sm hover:bg-highlight hover:border-highlight hover:text-zinc- cursor-default">Python</li>
-                <li class="bg-medium rounded-sm hover:bg-highlight hover:border-highlight hover:text-zinc- cursor-default">Java</li>
-                <li class="bg-medium rounded-sm hover:bg-highlight hover:border-highlight hover:text-zinc- cursor-default">C/C++</li>
-                <li class="bg-medium rounded-sm hover:bg-highlight hover:border-highlight hover:text-zinc- cursor-default">Flutter</li>
-                <li class="bg-medium rounded-sm hover:bg-highlight hover:border-highlight hover:text-zinc- cursor-default">Git & GitHub</li>
-                <li class="bg-medium rounded-sm hover:bg-highlight hover:border-highlight hover:text-zinc- cursor-default">PostgreSQL</li>
+                <li class="box-border w-3/5 sm:w-1/2 md:w-1/3 lg:w-48 aspect-square flex flex-col justify-center items-center gap-6 bg-medium rounded-md p-3 border-2 border-transparent hover:border-highlight hover:text-highlight transition-colors duration-200 cursor-default">
+                    <div class="flex flex-row justify-center">
+                        <img src="images/icons/javascript.svg" class="w-20 h-auto" alt="JavaScript icon">
+                        <img src="images/icons/react.svg" class="w-20 h-auto" alt="React icon">
+                    </div>
+                    <p class="text-lg">JS & React</p>
+                </li>
+                <li class="box-border w-3/5 sm:w-1/2 md:w-1/3 lg:w-48 aspect-square flex flex-col justify-center items-center gap-6 bg-medium rounded-md p-3 border-2 border-transparent hover:border-highlight hover:text-highlight transition-colors duration-200 cursor-default">
+                    <img src="images/icons/python.svg" class="w-20 h-auto" alt="Python icon">
+                    <div class="text-lg">Python</div>
+                </li>
+                <li class="box-border w-3/5 sm:w-1/2 md:w-1/3 lg:w-48 aspect-square flex flex-col justify-center items-center gap-6 bg-medium rounded-md p-3 border-2 border-transparent hover:border-highlight hover:text-highlight transition-colors duration-200 cursor-default">
+                    <img src="images/icons/java.svg" class="w-20 h-auto" alt="Java icon">
+                    <div class="text-lg">Java</div>
+                </li>
+                <li class="box-border w-3/5 sm:w-1/2 md:w-1/3 lg:w-48 aspect-square flex flex-col justify-center items-center gap-6 bg-medium rounded-md p-3 border-2 border-transparent hover:border-highlight hover:text-highlight transition-colors duration-200 cursor-default">
+                    <img src="images/icons/cpp.svg" class="w-20 h-auto" alt="C++ icon">
+                    <div class="text-lg">C/C++</div>
+                </li>
+                <li class="box-border w-3/5 sm:w-1/2 md:w-1/3 lg:w-48 aspect-square flex flex-col justify-center items-center gap-6 bg-medium rounded-md p-3 border-2 border-transparent hover:border-highlight hover:text-highlight transition-colors duration-200 cursor-default">
+                    <img src="images/icons/flutter.svg" class="w-20 h-auto" alt="Flutter icon">
+                    <div class="text-lg">Flutter</div>
+                </li>
+                <li class="box-border w-3/5 sm:w-1/2 md:w-1/3 lg:w-48 aspect-square flex flex-col justify-center items-center gap-6 bg-medium rounded-md p-3 border-2 border-transparent hover:border-highlight hover:text-highlight transition-colors duration-200 cursor-default">
+                    <img src="images/icons/github.svg" class="w-20 h-auto" alt="Github icon">
+                    <div class="text-lg">Git & GitHub</div>
+                </li>
+                <li class="box-border w-3/5 sm:w-1/2 md:w-1/3 lg:w-48 aspect-square flex flex-col justify-center items-center gap-6 bg-medium rounded-md p-3 border-2 border-transparent hover:border-highlight hover:text-highlight transition-colors duration-200 cursor-default">
+                    <img src="images/icons/postgresql.svg" class="w-20 h-auto" alt="PostgreSQL icon">
+                    <div class="text-lg">PostgreSQL</div>
+                </li>
             </ul>
         </section>
         <section id="portfolio" class="container mx-auto w-4/5 mt-20 flex flex-col justify-center items-center">
             <h3 class="font-header font-semibold text-3xl mx-auto">Portfolio</h3>
-            <ul class="flex flex-row flex-wrap gap-4 mt-4">
+            <ul class="flex flex-row flex-wrap justify-center gap-4 mt-4">
                 <li class="group w-56 h-56 bg-medium rounded-md relative flex items-center justify-center cursor-default">
                     <img src="./images/acm_dei.png" class="w-3/5 h-auto opacity-100 rounded-md transition-opacity duration-300 ease-in group-hover:opacity-30" alt="ACM-DEI Website">
                     <div class="w-4/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-300 ease-in group-hover:opacity-100">
