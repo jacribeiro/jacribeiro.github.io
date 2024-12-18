@@ -33,9 +33,9 @@
     </header>
     <main class="mt-20 font-main w-full">
         <section id="profile" class="container w-4/5 mx-auto">
-            <h3 class="font-header font-semibold text-3xl md:text-4xl ">Profile</h3>
+            <h3 class="font-header font-semibold text-3xl md:text-4xl">Profile</h3>
             <hr class="bg-highlight h-1 w-64 border-0 hidden md:block">
-            <p class="text-justify text-lg md:text-2xl mt-4">I am a recently graduated Computer Engineer with a passion for
+            <p class="text-justify text-lg md:text-xl lg:text-2xl mt-4">I am a recently graduated Computer Engineer with a passion for
                 solving real-world problems through innovative software and
                 intelligent systems. My interests span Web and Application 
                 Development, Artificial Intelligence, and efficient software
@@ -54,7 +54,7 @@
             </p>
         </section>
         <section id="skills" class="container mx-auto w-4/5 mt-20 flex flex-col justify-center items-center">
-            <h3 class="font-header font-semibold text-3xl">My Skills</h3>
+            <h3 class="font-header font-semibold text-3xl md:text-4xl">My Skills</h3>
             <ul class="flex flex-row flex-wrap justify-center gap-2 sm:gap-1 md:gap-4 mt-4">
                 <li class="box-border w-3/5 sm:w-1/2 md:w-1/3 lg:w-48 aspect-square flex flex-col justify-center items-center gap-6 bg-medium rounded-md p-3 border-2 border-transparent hover:border-highlight hover:text-highlight transition-colors duration-200 cursor-default">
                     <div class="flex justify-center items-center -space-x-3">
@@ -97,7 +97,7 @@
             </ul>
         </section>
         <section id="portfolio" class="container mx-auto w-4/5 mt-20 flex flex-col justify-center items-center">
-            <h3 class="font-header font-semibold text-3xl mx-auto">Portfolio</h3>
+            <h3 class="font-header font-semibold text-3xl md:text-4xl">Portfolio</h3>
             <ul class="flex flex-row flex-wrap justify-center gap-4 mt-4">
                 <li class="group w-3/5 sm:w-1/2 md:w-1/3 lg:w-48 aspect-square bg-medium rounded-md relative flex items-center justify-center cursor-default">
                     <img src="./images/acm_dei.png" class="w-3/5 aspect-square opacity-100 rounded-md transition-opacity duration-300 ease-in group-hover:opacity-30" alt="ACM-DEI Website">
@@ -125,52 +125,62 @@
                 </li>
             </ul>
         </section>
-        <section id="experience" class="w-full mt-20 py-7 bg-medium">
-            <header class="w-4/5 container mx-auto">
-                <h3 class="font-header font-semibold text-4xl md:text-3xl">Experience</h3>
+        <section id="experience" class="w-full mt-20 pt-7 pb-10 bg-medium shadow-experienceBox">
+            <header class="w-4/5 container relative bottom-1 mx-auto">
+                <h3 class="font-header font-semibold text-3xl md:text-4xl">Experience</h3>
                 <hr class="bg-highlight h-1 w-64 border-0 hidden md:block">
             </header>
-            <p class="w-4/5 container mx-auto mt-4">Here's a short summary of recent work experiences that shaped my technical and problem-solving skills:</p>
+            <p class="w-4/5 container mx-auto mt-4 text-xl">Here's a short summary of recent work experiences that shaped my technical and problem-solving skills:</p>
             <ul class="w-4/5 container mx-auto mt-4">
                 <li>
-                    <h4>Student Collaborator - Department of Informatics Engineering, FEUP
+                    <div class="flex items-center gap-3 overflow-visible">
+                        <div class="w-4 h-4 rounded-full bg-highlight shadow-yellowGlow border border-transparent"></div>
+                        <h4 class="text-2xl">Student Collaborator</h4>
+                    </div>
+                    <h5 class="text-xl">Department of Informatics Engineering, FEUP
                         <span class="italic">(Apr 2023 - Jun 2024)</span>
-                    </h4>
-                    <ul>
+                    </h5>
+                    <ul class="relative left-5 text-slate-200 text-lg list-disc marker:text-slate-100">
                         <li>Developed a custom website mapping ACM topics to research subareas.</li>
                         <li>Conducted usability testing for MOOCs, improving learning platforms.</li>
                         <li>Updated departmental micro-websites, ensuring accurate information and details.</li>
                     </ul>
                 </li>
-                <li>
-                    <h4>Harvest Internship - Mainova Winery <span class="italic">(Aug 2024 - Nov 2024)</span></h4>
+                <li class="mt-4">
+                    <div class="flex items-center gap-3 overflow-visible">
+                        <div class="w-4 h-4 rounded-full bg-highlight shadow-yellowGlow border border-transparent"></div>
+                        <h4 class="text-2xl">Harvest Intern</h4>
+                    </div>
+                    <h5 class="text-xl">Mainova Winery <span class="italic">(Aug 2024 - Nov 2024)</span></h5>
                     <ul>
-                        <li>Supported process optimization, through developement of communication and
+                        <li class="relative left-5 text-slate-200 text-lg list-disc marker:text-slate-100">
+                            Supported process optimization, through developement of communication and
                             teamwork in a fast-paced production environment.
                         </li>
                     </ul>
                 </li>
             </ul>
         </section>
-        <section id="contact" class="flex flex-col justify-center items-center mt-20">
-            <h3 class="font-header text-3xl">Contact Me</h3>
-            <ul class="flex flex-row mt-4 gap-4">
+        <section id="contact" class="flex flex-col justify-center items-center gap-6 py-6 border-y-2 border-highlight">
+            <h3 class="font-header font-semibold text-3xl md:text-4xl z-10">Contact Me</h3>
+            <ul class="flex flex-col items-center lg:flex-row gap-1 lg:gap-7 text-xl">
                 <li>j.alberto.cribeiro@gmail.com</li>
-                <li>(+351) 912 644 870</li>
-                <li>Porto, Portugal</li>
+                <li class="lg:relative lg:before:content-['•'] lg:before:absolute lg:before:-left-4">(+351) 912 644 870</li>
+                <li class="lg:relative lg:before:content-['•'] lg:before:absolute lg:before:-left-4">Porto, Portugal</li>
             </ul>
+            <aside>
+                <ul class="flex items-center justify-center gap-4 z-10">
+                    <li><a class="text-4xl" href="https://www.linkedin.com/in/joao-ribeiro-compsci/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a class="text-4xl" href="https://github.com/jacribeiro"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a class="text-4xl" href="https://www.instagram.com/abarba.doribeiro/"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </aside>
         </section>
     </main>
     
-    <aside>
-        <ul>
-            <li>Linkedin</li>
-            <li>GitHub</li>
-            <li>Instagram</li>
-        </ul>
-    </aside>
-    <footer class="bg-medium">
-        <p>Looking forward to creating innovative solutions together. Get in touch!</p>
+    
+    <footer class="bg-medium py-10">
+        <p class="text-center font-main text-xl">Looking forward to creating innovative solutions together. Get in touch!</p>
     </footer>
 </body>
 </html>
