@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,26 +10,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="./output.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/site.webmanifest">
     <script src="https://kit.fontawesome.com/13668f996f.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-dark text-slate-50 w-full">
     <nav class="flex justify-center bg-medium">
-        <ul class="flex flex-row gap-x-8 py-8 font-main font-semibold text-lg">
-            <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8"><a href="#profile">Profile</a></li>
-            <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8"><a href="#skills">My Skills</a></li>
-            <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8"><a href="#portfolio">Portfolio</a></li>
-            <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8"><a href="#experience">Experience</a></li>
-            <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8"><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <header class="grid grid-cols-2 grid-rows-1 justify-center w-full bg-medium drop-shadow-lg font-header">
-        <div class="row-start-1 col-start-1 justify-self-end self-center flex flex-col gap-1">
-            <h1 class="text-2xl">Hi! I'm <span class="text-highlight text-6xl">João Ribeiro</span></h1>
-            <h2 class="font-main text-2xl text-light">Computer Engineering Graduate</h2>
-            <a href="#contact" 
-            class="px-4 py-2 border-2 border-solid border-highlight rounded-lg text-highlight font-main font-bold text-lg self-start my-1 hover:bg-highlight hover:text-light">Contact me!</a>
+        <div class="container mx-auto px-4 py-4 flex items-start gap-4 md:justify-center">
+            <button id="menu-toggle" class="block md:hidden text-light hover:text-highlight focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+            <ul id="menu" class="hidden relative left-2 md:flex flex-col md:flex-row md:gap-x-6 md:py-3 font-main font-semibold text-lg">
+                <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8"><a href="#profile">Profile</a></li>
+                <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8"><a href="#skills">My Skills</a></li>
+                <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8"><a href="#portfolio">Portfolio</a></li>
+                <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8"><a href="#experience">Experience</a></li>
+                <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8"><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <img src="./images/personal.png" class="row-start-1 col-start-2 justify-self-end"/>
+    </nav>
+    <header class="grid grid-cols-1 grid-rows-2 gap-3 md:grid-cols-2 md:grid-rows-1 justify-items-center justify-center w-full bg-medium drop-shadow-lg font-header">
+        <div class="row-start-2 col-start-1 md:row-start-1 md:justify-self-end md:self-center flex flex-col items-center md:items-start gap-1">
+            <h1 class="text-2xl">Hi! I'm <span class="text-highlight text-3xl sm:text-4xl md:text-6xl">João Ribeiro</span></h1>
+            <h2 class="font-main text-md sm:text-lg md:text-2xl text-light">Computer Engineering Graduate</h2>
+            <a href="#contact" 
+            class="px-4 py-2 border-2 border-highlight rounded-lg text-highlight font-main font-bold text-lg md:self-start my-1 hover:bg-highlight hover:text-light">Contact me!</a>
+        </div>
+        <img src="./images/personal.png" class="w-2/5 md:w-11/12 row-start-1 col-start-1 md:col-start-2 rounded-full border-2 border-light md:border-transparent md:rounded-none md:justify-self-end"/>
     </header>
     <main class="mt-20 font-main w-full">
         <section id="profile" class="container w-4/5 mx-auto">
@@ -183,4 +192,12 @@
         <p class="text-center font-main text-xl">Looking forward to creating innovative solutions together. Get in touch!</p>
     </footer>
 </body>
+<script defer>
+    const toggleButton = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    toggleButton.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+</script>
 </html>
