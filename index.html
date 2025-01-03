@@ -1,233 +1,413 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>João Ribeiro's Website</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="./output.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./images/favicon/site.webmanifest">
-    <script src="https://kit.fontawesome.com/13668f996f.js" crossorigin="anonymous"></script>
-</head>
-<body class="bg-dark text-slate-50 w-full">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+    <script
+      src="https://kit.fontawesome.com/13668f996f.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body class="w-full bg-dark text-slate-50">
     <nav class="relative flex justify-center bg-medium">
-        <div class="container mx-auto px-4 py-4 flex items-start gap-5 md:justify-center">
-            <!-- Toggle Button for small screens -->
-            <button id="menu-toggle" class="block md:hidden text-light hover:text-highlight focus:outline-none">
-                <i class="fa-solid fa-bars text-2xl"></i>
-            </button>
-    
-            <!-- Menu Overlay with full page height -->
-            <div id="menu-overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
-            
-            <ul id="menu" 
-                class="fixed top-0 left-0 w-1/2 max-w-2xl h-full bg-medium z-50 transform -translate-x-full transition-transform duration-300 ease-in-out md:relative md:w-3/4 md:translate-x-0 md:flex md:flex-row md:justify-center md:gap-x-8 pl-5 md:pl-0 md:py-3 font-main font-semibold text-xl">
-                <!-- Close Button -->
-                <button id="menu-close"
-                    class="absolute top-4 right-4 text-light hover:text-highlight md:hidden">
-                    <i class="fa-solid fa-xmark text-2xl"></i>
-                </button>
-    
-                <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8 mb-4 md:mb-0 mt-8 md:mt-0"><a href="#profile">Profile</a></li>
-                <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8 mb-4 md:mb-0"><a href="#skills">My Skills</a></li>
-                <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8 mb-4 md:mb-0"><a href="#portfolio">Portfolio</a></li>
-                <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8 mb-4 md:mb-0"><a href="#experience">Experience</a></li>
-                <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8"><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div
+        class="container mx-auto flex items-start gap-5 px-4 py-4 md:justify-center">
+        <!-- Toggle Button for small screens -->
+        <button
+          id="menu-toggle"
+          class="block text-light hover:text-highlight focus:outline-none md:hidden">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+
+        <!-- Menu Overlay with full page height -->
+        <div
+          id="menu-overlay"
+          class="fixed inset-0 z-40 hidden bg-black bg-opacity-50"></div>
+
+        <ul
+          id="menu"
+          class="fixed left-0 top-0 z-50 h-full w-1/2 max-w-2xl -translate-x-full transform bg-medium pl-5 font-main text-xl font-semibold transition-transform duration-300 ease-in-out md:relative md:flex md:w-3/4 md:translate-x-0 md:flex-row md:justify-center md:gap-x-8 md:py-3 md:pl-0">
+          <!-- Close Button -->
+          <button
+            id="menu-close"
+            class="absolute right-4 top-4 text-light hover:text-highlight md:hidden">
+            <i class="fa-solid fa-xmark text-2xl"></i>
+          </button>
+
+          <li
+            class="mb-4 mt-8 text-light hover:text-highlight hover:underline hover:underline-offset-8 md:mb-0 md:mt-0">
+            <a href="#profile">Profile</a>
+          </li>
+          <li
+            class="mb-4 text-light hover:text-highlight hover:underline hover:underline-offset-8 md:mb-0">
+            <a href="#skills">My Skills</a>
+          </li>
+          <li
+            class="mb-4 text-light hover:text-highlight hover:underline hover:underline-offset-8 md:mb-0">
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li
+            class="mb-4 text-light hover:text-highlight hover:underline hover:underline-offset-8 md:mb-0">
+            <a href="#experience">Experience</a>
+          </li>
+          <li
+            class="text-light hover:text-highlight hover:underline hover:underline-offset-8">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <header class="grid grid-cols-1 grid-rows-1 sm:grid-rows-[2fr_1fr] gap-3 md:grid-cols-2 md:grid-rows-1 py-5 md:py-0 justify-items-center justify-center w-full bg-medium drop-shadow-lg font-header">
-        <div class="row-start-2 col-start-1 md:row-start-1 md:justify-self-end self-start md:self-center flex flex-col items-center md:items-start gap-1 md:gap-2 lg:gap-3">
-            <h1 class="text-xl md:text-2xl lg:text-4xl">Hi! I'm <span class="text-highlight text-3xl md:text-4xl lg:text-6xl">João Ribeiro</span></h1>
-            <h2 class="font-main text-lg md:text-2xl text-light">Computer Engineering Graduate</h2>
-            <a href="#contact" 
-            class="px-3 py-2 border-2 border-highlight rounded-lg text-highlight font-main font-bold text-base md:px-4 md:py-3 md:text-lg lg:px-6 lg:py-4 lg:text-xl hover:bg-highlight hover:text-light">
-            Contact me!
-            </a>
-        </div>
-        <img src="./images/portrait.jpg" class="w-2/5 sm:w-2/5 md:w-11/12 row-start-1 col-start-1 md:col-start-2 md:justify-self-end self-start rounded-full border-2 border-light md:border-none md:rounded-none "/>
+    <header
+      class="grid w-full grid-cols-1 grid-rows-1 justify-center justify-items-center gap-3 bg-medium py-5 font-header drop-shadow-lg sm:grid-rows-[2fr_1fr] md:grid-cols-2 md:grid-rows-1 md:py-0">
+      <div
+        class="col-start-1 row-start-2 flex flex-col items-center gap-1 self-start md:row-start-1 md:items-start md:gap-2 md:self-center md:justify-self-end lg:gap-3">
+        <h1 class="text-xl md:text-2xl lg:text-4xl">
+          Hi! I'm
+          <span class="text-3xl text-highlight md:text-4xl lg:text-6xl"
+            >João Ribeiro</span
+          >
+        </h1>
+        <h2 class="font-main text-lg text-light md:text-2xl">
+          Computer Engineering Graduate
+        </h2>
+        <a
+          href="#contact"
+          class="rounded-lg border-2 border-highlight px-3 py-2 font-main text-base font-bold text-highlight hover:bg-highlight hover:text-light md:px-4 md:py-3 md:text-lg lg:px-6 lg:py-4 lg:text-xl">
+          Contact me!
+        </a>
+      </div>
+      <img
+        src="./images/portrait.jpg"
+        class="col-start-1 row-start-1 w-2/5 self-start rounded-full border-2 border-light sm:w-2/5 md:col-start-2 md:w-11/12 md:justify-self-end md:rounded-none md:border-none" />
     </header>
-    <main class="mt-20 font-main w-full">
-        <section id="profile" class="container w-4/5 mx-auto">
-            <h3 class="font-header font-semibold text-3xl md:text-4xl">Profile</h3>
-            <hr class="bg-highlight h-1 w-64 border-0 hidden md:block">
-            <p class="text-justify text-lg md:text-xl lg:text-2xl mt-4">I am a recently graduated Computer Engineer with a passion for
-                solving real-world problems through innovative software and
-                intelligent systems. My interests span Web and Application 
-                Development, Artificial Intelligence, and efficient software
-                design. With a solid foundation in programming (C++, Python,
-                Java, and React) and hands-on experience in an academic setting,
-                I am eager to collaborate with teams where I can contribute,
-                learn, and grow.
-                Through my diverse work experiences, I have developed 
-                <span class="text-highlight">communication</span> and 
-                <span class="text-highlight">teamwork skills</span>,
-                <span class="text-highlight">adaptability in fast-paced 
-                environments</span>, and a <span class="text-highlight">
-                proactive approach to problem-solving</span>.
-                Outside of work, I enjoy hiking, cinema, and board games, 
-                activities that fuel my creativity and strategic thinking.
-            </p>
-        </section>
-        <section id="skills" class="container mx-auto w-4/5 mt-20 flex flex-col justify-center items-center">
-            <h3 class="font-header font-semibold text-3xl md:text-4xl">My Skills</h3>
-            <ul class="flex flex-row flex-wrap justify-center gap-2 sm:gap-1 md:gap-4 mt-4">
-                <li class="box-border w-2/5 md:w-1/3 lg:w-48 aspect-square flex flex-col justify-center items-center gap-6 bg-medium rounded-md p-3 border-2 border-transparent hover:border-highlight hover:text-highlight transition-colors duration-200 cursor-default">
-                    <div class="flex justify-center items-center -space-x-3">
-                        <img src="images/icons/html-5.svg" class="w-1/2 md:w-1/2 lg:w-20 flex-shrink-0" alt="HTML icon">
-                        <img src="images/icons/css.svg" class="w-1/2 md:w-1/2 lg:w-20 flex-shrink-0 relative top-[3px] lg:top-0.5" alt="CSS icon">
-                    </div>
-                    <p class="text-xl sm:text-2xl md:text-xl lg:text-lg">HTML & CSS</p>
-                </li>
-                <li class="box-border w-2/5 md:w-1/3 lg:w-48 aspect-square flex flex-col justify-center items-center gap-8 lg:gap-7 bg-medium rounded-md pt-5 p-3 border-2 border-transparent hover:border-highlight hover:text-highlight transition-colors duration-200 cursor-default">
-                    <div class="flex justify-center items-center gap-2">
-                        <img src="images/icons/javascript.svg" class="w-2/5 md:w-2/5 lg:w-16 flex-shrink-0" alt="JavaScript icon">
-                        <img src="images/icons/react.svg" class="w-2/5 md:w-2/5 lg:w-16 flex-shrink-0" alt="React icon">
-                    </div>
-                    <p class="text-xl sm:text-2xl md:text-xl lg:text-lg">JS & React</p>
-                </li>
-                <li class="box-border w-2/5 md:w-1/3 lg:w-48 aspect-square flex flex-col justify-center items-center gap-4 bg-medium rounded-md p-3 border-2 border-transparent hover:border-highlight hover:text-highlight transition-colors duration-200 cursor-default">
-                    <img src="images/icons/python.svg" class="w-1/2 lg:w-18 flex-shrink-0" alt="Python icon">
-                    <div class="text-xl sm:text-2xl md:text-xl lg:text-lg">Python</div>
-                </li>
-                <li class="box-border w-2/5 md:w-1/3 lg:w-48 aspect-square flex flex-col justify-center items-center gap-4 bg-medium rounded-md p-3 border-2 border-transparent hover:border-highlight hover:text-highlight transition-colors duration-200 cursor-default">
-                    <img src="images/icons/java.svg" class="w-1/2 lg:w-18 flex-shrink-0" alt="Java icon">
-                    <div class="text-xl sm:text-2xl md:text-xl lg:text-lg">Java</div>
-                </li>
-                <li class="box-border w-2/5 md:w-1/3 lg:w-48 aspect-square flex flex-col justify-center items-center gap-5 bg-medium rounded-md pt-2 p-3 border-2 border-transparent hover:border-highlight hover:text-highlight transition-colors duration-200 cursor-default">
-                    <img src="images/icons/cpp.svg" class="w-1/2 lg:w-18 flex-shrink-0" alt="C++ icon">
-                    <div class="text-xl sm:text-2xl md:text-xl lg:text-lg">C/C++</div>
-                </li>
-                <li class="box-border w-2/5 md:w-1/3 lg:w-48 aspect-square flex flex-col justify-center items-center gap-6 bg-medium rounded-md pt-6 p-3 border-2 border-transparent hover:border-highlight hover:text-highlight transition-colors duration-200 cursor-default">
-                    <img src="images/icons/flutter.svg" class="w-5/12 lg:w-16 flex-shrink-0" alt="Flutter icon">
-                    <div class="text-xl sm:text-2xl md:text-xl lg:text-lg">Flutter</div>
-                </li>
-                <li class="box-border w-2/5 md:w-1/3 lg:w-48 aspect-square flex flex-col justify-center items-center gap-6 bg-medium rounded-md pt-6 p-3 border-2 border-transparent hover:border-highlight hover:text-highlight transition-colors duration-200 cursor-default">
-                    <img src="images/icons/github.svg" class="w-5/12 lg:w-18 flex-shrink-0" alt="Github icon">
-                    <div class="text-xl sm:text-2xl md:text-xl lg:text-lg">Git & GitHub</div>
-                </li>
-                <li class="box-border w-2/5 md:w-1/3 lg:w-48 aspect-square flex flex-col justify-center items-center gap-6 bg-medium rounded-md pt-6 p-3 border-2 border-transparent hover:border-highlight hover:text-highlight transition-colors duration-200 cursor-default">
-                    <img src="images/icons/postgresql.svg" class="w-2/5 lg:w-18 flex-shrink-0" alt="PostgreSQL icon">
-                    <div class="text-xl sm:text-2xl md:text-xl lg:text-lg">PostgreSQL</div>
-                </li>
+    <main class="mt-20 w-full font-main">
+      <section id="profile" class="container mx-auto w-4/5">
+        <h3 class="font-header text-3xl font-semibold md:text-4xl">Profile</h3>
+        <hr class="hidden h-1 w-64 border-0 bg-highlight md:block" />
+        <p class="mt-4 text-justify text-lg md:text-xl lg:text-2xl">
+          I am a recently graduated Computer Engineer with a passion for solving
+          real-world problems through innovative software and intelligent
+          systems. My interests span Web and Application Development, Artificial
+          Intelligence, and efficient software design. With a solid foundation
+          in programming (C++, Python, Java, and React) and hands-on experience
+          in an academic setting, I am eager to collaborate with teams where I
+          can contribute, learn, and grow. Through my diverse work experiences,
+          I have developed <span class="text-highlight">communication</span> and
+          <span class="text-highlight">teamwork skills</span>,
+          <span class="text-highlight"
+            >adaptability in fast-paced environments</span
+          >, and a
+          <span class="text-highlight">
+            proactive approach to problem-solving</span
+          >. Outside of work, I enjoy hiking, cinema, and board games,
+          activities that fuel my creativity and strategic thinking.
+        </p>
+      </section>
+      <section
+        id="skills"
+        class="container mx-auto mt-20 flex w-4/5 flex-col items-center justify-center">
+        <h3 class="font-header text-3xl font-semibold md:text-4xl">
+          My Skills
+        </h3>
+        <ul
+          class="mt-4 flex flex-row flex-wrap justify-center gap-2 sm:gap-1 md:gap-4">
+          <li
+            class="box-border flex aspect-square w-2/5 cursor-default flex-col items-center justify-center gap-6 rounded-md border-2 border-transparent bg-medium p-3 transition-colors duration-200 hover:border-highlight hover:text-highlight md:w-1/3 lg:w-48">
+            <div class="flex items-center justify-center -space-x-3">
+              <img
+                src="images/icons/html-5.svg"
+                class="w-1/2 flex-shrink-0 md:w-1/2 lg:w-20"
+                alt="HTML icon" />
+              <img
+                src="images/icons/css.svg"
+                class="relative top-[3px] w-1/2 flex-shrink-0 md:w-1/2 lg:top-0.5 lg:w-20"
+                alt="CSS icon" />
+            </div>
+            <p class="text-xl sm:text-2xl md:text-xl lg:text-lg">HTML & CSS</p>
+          </li>
+          <li
+            class="box-border flex aspect-square w-2/5 cursor-default flex-col items-center justify-center gap-8 rounded-md border-2 border-transparent bg-medium p-3 pt-5 transition-colors duration-200 hover:border-highlight hover:text-highlight md:w-1/3 lg:w-48 lg:gap-7">
+            <div class="flex items-center justify-center gap-2">
+              <img
+                src="images/icons/javascript.svg"
+                class="w-2/5 flex-shrink-0 md:w-2/5 lg:w-16"
+                alt="JavaScript icon" />
+              <img
+                src="images/icons/react.svg"
+                class="w-2/5 flex-shrink-0 md:w-2/5 lg:w-16"
+                alt="React icon" />
+            </div>
+            <p class="text-xl sm:text-2xl md:text-xl lg:text-lg">JS & React</p>
+          </li>
+          <li
+            class="box-border flex aspect-square w-2/5 cursor-default flex-col items-center justify-center gap-4 rounded-md border-2 border-transparent bg-medium p-3 transition-colors duration-200 hover:border-highlight hover:text-highlight md:w-1/3 lg:w-48">
+            <img
+              src="images/icons/python.svg"
+              class="lg:w-18 w-1/2 flex-shrink-0"
+              alt="Python icon" />
+            <div class="text-xl sm:text-2xl md:text-xl lg:text-lg">Python</div>
+          </li>
+          <li
+            class="box-border flex aspect-square w-2/5 cursor-default flex-col items-center justify-center gap-4 rounded-md border-2 border-transparent bg-medium p-3 transition-colors duration-200 hover:border-highlight hover:text-highlight md:w-1/3 lg:w-48">
+            <img
+              src="images/icons/java.svg"
+              class="lg:w-18 w-1/2 flex-shrink-0"
+              alt="Java icon" />
+            <div class="text-xl sm:text-2xl md:text-xl lg:text-lg">Java</div>
+          </li>
+          <li
+            class="box-border flex aspect-square w-2/5 cursor-default flex-col items-center justify-center gap-5 rounded-md border-2 border-transparent bg-medium p-3 pt-2 transition-colors duration-200 hover:border-highlight hover:text-highlight md:w-1/3 lg:w-48">
+            <img
+              src="images/icons/cpp.svg"
+              class="lg:w-18 w-1/2 flex-shrink-0"
+              alt="C++ icon" />
+            <div class="text-xl sm:text-2xl md:text-xl lg:text-lg">C/C++</div>
+          </li>
+          <li
+            class="box-border flex aspect-square w-2/5 cursor-default flex-col items-center justify-center gap-6 rounded-md border-2 border-transparent bg-medium p-3 pt-6 transition-colors duration-200 hover:border-highlight hover:text-highlight md:w-1/3 lg:w-48">
+            <img
+              src="images/icons/flutter.svg"
+              class="w-5/12 flex-shrink-0 lg:w-16"
+              alt="Flutter icon" />
+            <div class="text-xl sm:text-2xl md:text-xl lg:text-lg">Flutter</div>
+          </li>
+          <li
+            class="box-border flex aspect-square w-2/5 cursor-default flex-col items-center justify-center gap-6 rounded-md border-2 border-transparent bg-medium p-3 pt-6 transition-colors duration-200 hover:border-highlight hover:text-highlight md:w-1/3 lg:w-48">
+            <img
+              src="images/icons/github.svg"
+              class="lg:w-18 w-5/12 flex-shrink-0"
+              alt="Github icon" />
+            <div class="text-xl sm:text-2xl md:text-xl lg:text-lg">
+              Git & GitHub
+            </div>
+          </li>
+          <li
+            class="box-border flex aspect-square w-2/5 cursor-default flex-col items-center justify-center gap-6 rounded-md border-2 border-transparent bg-medium p-3 pt-6 transition-colors duration-200 hover:border-highlight hover:text-highlight md:w-1/3 lg:w-48">
+            <img
+              src="images/icons/postgresql.svg"
+              class="lg:w-18 w-2/5 flex-shrink-0"
+              alt="PostgreSQL icon" />
+            <div class="text-xl sm:text-2xl md:text-xl lg:text-lg">
+              PostgreSQL
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section
+        id="portfolio"
+        class="container mx-auto mt-20 flex w-4/5 flex-col items-center justify-center">
+        <h3 class="font-header text-3xl font-semibold md:text-4xl">
+          Portfolio
+        </h3>
+        <ul class="mt-4 flex flex-row flex-wrap justify-center gap-4">
+          <li
+            class="group relative flex aspect-square w-2/5 cursor-default items-center justify-center rounded-md border border-transparent bg-medium transition-colors duration-200 hover:border-highlight md:w-1/3 lg:w-48">
+            <img
+              src="./images/acm_dei.png"
+              class="aspect-square w-3/5 rounded-md opacity-100 transition-opacity duration-200 ease-in group-hover:opacity-30"
+              alt="ACM-DEI Website" />
+            <div
+              class="absolute left-1/2 top-1/2 w-4/5 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-200 ease-in group-hover:opacity-100">
+              <a href="https://github.com/jacribeiro/ACM-DEI-Website/">
+                <div class="rounded-sm bg-highlight px-4 py-2 text-center">
+                  ACM-DEI Website
+                </div>
+              </a>
+            </div>
+          </li>
+          <li
+            class="group relative flex aspect-square w-2/5 cursor-default items-center justify-center rounded-md border border-transparent bg-medium transition-colors duration-200 hover:border-highlight md:w-1/3 lg:w-48">
+            <img
+              src="./images/notes_app.png"
+              class="aspect-square w-3/5 rounded-md opacity-100 transition-opacity duration-200 ease-in group-hover:opacity-30"
+              alt="Notes App" />
+            <div
+              class="absolute left-1/2 top-1/2 w-4/5 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-200 ease-in group-hover:opacity-100">
+              <a href="https://github.com/jacribeiro/NotesApp/">
+                <div class="rounded-sm bg-highlight px-4 py-2 text-center">
+                  Notes App
+                </div>
+              </a>
+            </div>
+          </li>
+          <li
+            class="group relative flex aspect-square w-2/5 cursor-default items-center justify-center rounded-md border border-transparent bg-medium transition-colors duration-200 hover:border-highlight md:w-1/3 lg:w-48">
+            <img
+              src="./images/shapes.png"
+              class="aspect-square w-3/5 rounded-md opacity-100 transition-opacity duration-200 ease-in group-hover:opacity-30"
+              alt="Beautiful Shapes" />
+            <div
+              class="absolute left-1/2 top-1/2 w-4/5 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-200 ease-in group-hover:opacity-100">
+              <a href="https://github.com/jacribeiro/beautiful_shapes">
+                <div class="rounded-sm bg-highlight px-4 py-2 text-center">
+                  Beautiful Shapes
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section
+        id="experience"
+        class="mt-20 w-full bg-medium py-10 pr-5 text-justify shadow-experienceBox md:py-16">
+        <header class="container relative bottom-1 mx-auto w-4/5">
+          <h3 class="font-header text-3xl font-semibold md:text-4xl">
+            Experience
+          </h3>
+          <hr class="hidden h-1 w-64 border-0 bg-highlight md:block" />
+        </header>
+        <p class="container mx-auto mt-4 w-4/5 text-lg sm:text-2xl">
+          Here's a short summary of recent work experiences that shaped my
+          technical and problem-solving skills:
+        </p>
+        <ul class="container mx-auto mt-4 w-4/5">
+          <li>
+            <div class="flex items-center gap-3">
+              <div
+                class="h-4 w-4 rounded-full border border-transparent bg-highlight shadow-yellowGlow"></div>
+              <h4 class="text-xl sm:text-2xl md:text-3xl">
+                Student Collaborator
+              </h4>
+            </div>
+            <h5 class="text-lg sm:text-xl md:text-2xl">
+              Department of Informatics Engineering, FEUP
+              <span class="italic">(Apr 2023 - Jun 2024)</span>
+            </h5>
+            <ul
+              class="text-md relative left-5 list-disc text-slate-200 marker:text-slate-100 sm:text-lg md:text-xl">
+              <li>
+                Developed a custom website mapping ACM topics to research
+                subareas.
+              </li>
+              <li>
+                Conducted usability testing for MOOCs, improving learning
+                platforms.
+              </li>
+              <li>
+                Updated departmental micro-websites, ensuring accurate
+                information and details.
+              </li>
             </ul>
-        </section>
-        <section id="portfolio" class="container mx-auto w-4/5 mt-20 flex flex-col justify-center items-center">
-            <h3 class="font-header font-semibold text-3xl md:text-4xl">Portfolio</h3>
-            <ul class="flex flex-row flex-wrap justify-center gap-4 mt-4">
-                <li class="group w-2/5 md:w-1/3 lg:w-48 aspect-square bg-medium rounded-md relative flex items-center justify-center cursor-default border border-transparent hover:border-highlight transition-colors duration-200">
-                    <img src="./images/acm_dei.png" class="w-3/5 aspect-square opacity-100 rounded-md transition-opacity duration-200 ease-in group-hover:opacity-30" alt="ACM-DEI Website">
-                    <div class="w-4/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-200 ease-in group-hover:opacity-100">
-                        <a href="https://github.com/jacribeiro/ACM-DEI-Website/">
-                            <div class="bg-highlight px-4 py-2 rounded-sm text-center">ACM-DEI Website</div>
-                        </a>
-                    </div>
-                </li>
-                <li class="group w-2/5 md:w-1/3 lg:w-48 aspect-square bg-medium rounded-md relative flex items-center justify-center cursor-default border border-transparent hover:border-highlight transition-colors duration-200">
-                    <img src="./images/notes_app.png" class="w-3/5 aspect-square opacity-100 rounded-md transition-opacity duration-200 ease-in group-hover:opacity-30" alt="Notes App">
-                    <div class="w-4/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-200 ease-in group-hover:opacity-100">
-                        <a href="https://github.com/jacribeiro/NotesApp/">
-                            <div class="bg-highlight px-4 py-2 rounded-sm text-center">Notes App</div>
-                        </a>
-                    </div>
-                </li>
-                <li class="group w-2/5 md:w-1/3 lg:w-48 aspect-square bg-medium rounded-md relative flex items-center justify-center cursor-default border border-transparent hover:border-highlight transition-colors duration-200">
-                    <img src="./images/shapes.png" class="w-3/5 aspect-square opacity-100 rounded-md transition-opacity duration-200 ease-in group-hover:opacity-30" alt="Beautiful Shapes">
-                    <div class="w-4/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-200 ease-in group-hover:opacity-100">
-                        <a href="https://github.com/jacribeiro/beautiful_shapes">
-                            <div class="bg-highlight px-4 py-2 rounded-sm text-center">Beautiful Shapes</div>
-                        </a>
-                    </div>
-                </li>
+          </li>
+          <li class="mt-4">
+            <div class="flex items-center gap-3">
+              <div
+                class="h-4 w-4 rounded-full border border-transparent bg-highlight shadow-yellowGlow"></div>
+              <h4 class="text-xl sm:text-2xl md:text-3xl">Harvest Intern</h4>
+            </div>
+            <h5 class="text-lg sm:text-xl md:text-2xl">
+              Mainova Winery <span class="italic">(Aug 2024 - Nov 2024)</span>
+            </h5>
+            <ul>
+              <li
+                class="text-md relative left-5 list-disc text-slate-200 marker:text-slate-100 sm:text-lg md:text-xl">
+                Supported process optimization, through developement of
+                communication and teamwork in a fast-paced production
+                environment.
+              </li>
             </ul>
-        </section>
-        <section id="experience" class="w-full mt-20 py-10 md:py-16 pr-5 text-justify bg-medium shadow-experienceBox">
-            <header class="w-4/5 container relative bottom-1 mx-auto">
-                <h3 class="font-header font-semibold text-3xl md:text-4xl">Experience</h3>
-                <hr class="bg-highlight h-1 w-64 border-0 hidden md:block">
-            </header>
-            <p class="w-4/5 container mx-auto mt-4 text-lg sm:text-2xl">Here's a short summary of recent work experiences that shaped my technical and problem-solving skills:</p>
-            <ul class="w-4/5 container mx-auto mt-4">
-                <li>
-                    <div class="flex items-center gap-3">
-                        <div class="w-4 h-4 rounded-full bg-highlight shadow-yellowGlow border border-transparent"></div>
-                        <h4 class="text-xl sm:text-2xl md:text-3xl">Student Collaborator</h4>
-                    </div>
-                    <h5 class="text-lg sm:text-xl md:text-2xl">Department of Informatics Engineering, FEUP
-                        <span class="italic">(Apr 2023 - Jun 2024)</span>
-                    </h5>
-                    <ul class="relative left-5 text-slate-200 text-md sm:text-lg md:text-xl list-disc marker:text-slate-100">
-                        <li>Developed a custom website mapping ACM topics to research subareas.</li>
-                        <li>Conducted usability testing for MOOCs, improving learning platforms.</li>
-                        <li>Updated departmental micro-websites, ensuring accurate information and details.</li>
-                    </ul>
-                </li>
-                <li class="mt-4">
-                    <div class="flex items-center gap-3">
-                        <div class="w-4 h-4 rounded-full bg-highlight shadow-yellowGlow border border-transparent"></div>
-                        <h4 class="text-xl sm:text-2xl md:text-3xl">Harvest Intern</h4>
-                    </div>
-                    <h5 class="text-lg sm:text-xl md:text-2xl">Mainova Winery <span class="italic">(Aug 2024 - Nov 2024)</span></h5>
-                    <ul>
-                        <li class="relative left-5 text-slate-200 text-md sm:text-lg md:text-xl list-disc marker:text-slate-100">
-                            Supported process optimization, through developement of communication and
-                            teamwork in a fast-paced production environment.
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <section id="contact" class="flex flex-col justify-center items-center gap-6 py-6 border-y-2 border-highlight">
-            <h3 class="font-header font-semibold text-3xl md:text-4xl z-10">Contact Me</h3>
-            <ul class="flex flex-col items-center lg:flex-row gap-1 lg:gap-7 text-xl">
-                <li>j.alberto.cribeiro@gmail.com</li>
-                <li class="lg:relative lg:before:content-['•'] lg:before:absolute lg:before:-left-4">(+351) 912 644 870</li>
-                <li class="lg:relative lg:before:content-['•'] lg:before:absolute lg:before:-left-4">Porto, Portugal</li>
-            </ul>
-            <aside>
-                <ul class="flex items-center justify-center gap-4 z-10">
-                    <li><a class="text-4xl" href="https://www.linkedin.com/in/joao-ribeiro-compsci/"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a class="text-4xl" href="https://github.com/jacribeiro"><i class="fa-brands fa-github"></i></a></li>
-                    <li><a class="text-4xl" href="https://www.instagram.com/abarba.doribeiro/"><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
-            </aside>
-        </section>
+          </li>
+        </ul>
+      </section>
+      <section
+        id="contact"
+        class="flex flex-col items-center justify-center gap-6 border-y-2 border-highlight py-6">
+        <h3 class="z-10 font-header text-3xl font-semibold md:text-4xl">
+          Contact Me
+        </h3>
+        <ul
+          class="flex flex-col items-center gap-1 text-lg md:text-xl lg:flex-row lg:gap-7">
+          <li>j.alberto.cribeiro@gmail.com</li>
+          <li
+            class="lg:relative lg:before:absolute lg:before:-left-4 lg:before:content-['•']">
+            (+351) 912 644 870
+          </li>
+          <li
+            class="lg:relative lg:before:absolute lg:before:-left-4 lg:before:content-['•']">
+            Porto, Portugal
+          </li>
+        </ul>
+        <aside>
+          <ul class="z-10 flex items-center justify-center gap-6 md:gap-4">
+            <li>
+              <a
+                class="text-3xl md:text-4xl"
+                href="https://www.linkedin.com/in/joao-ribeiro-compsci/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="text-3xl md:text-4xl"
+                href="https://github.com/jacribeiro"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="text-3xl md:text-4xl"
+                href="https://www.instagram.com/abarba.doribeiro/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </aside>
+      </section>
     </main>
-    
-    
+
     <footer class="bg-medium p-10">
-        <p class="text-center font-main text-md md:text-xl">Looking forward to creating innovative solutions together. Get in touch!</p>
+      <p class="text-md text-center font-main md:text-xl">
+        Looking forward to creating innovative solutions together. Get in touch!
+      </p>
     </footer>
-</body>
-<script defer>
-    const toggleButton = document.getElementById('menu-toggle');
-    const closeButton = document.getElementById('menu-close');
-    const menu = document.getElementById('menu');
-    const overlay = document.getElementById('menu-overlay');
+  </body>
+  <script defer>
+    const toggleButton = document.getElementById("menu-toggle");
+    const closeButton = document.getElementById("menu-close");
+    const menu = document.getElementById("menu");
+    const overlay = document.getElementById("menu-overlay");
 
     // Open the menu
-    toggleButton.addEventListener('click', () => {
-        menu.classList.remove('-translate-x-full'); // Slide the menu in
-        menu.classList.add('translate-x-0');
-        overlay.classList.remove('hidden'); // Display the overlay
+    toggleButton.addEventListener("click", () => {
+      menu.classList.remove("-translate-x-full"); // Slide the menu in
+      menu.classList.add("translate-x-0");
+      overlay.classList.remove("hidden"); // Display the overlay
     });
 
     // Close the menu
     const closeMenu = () => {
-        menu.classList.remove('translate-x-0'); // Slide the menu out
-        menu.classList.add('-translate-x-full');
-        overlay.classList.add('hidden'); // Hide the overlay
+      menu.classList.remove("translate-x-0"); // Slide the menu out
+      menu.classList.add("-translate-x-full");
+      overlay.classList.add("hidden"); // Hide the overlay
     };
 
     // Clicking the menu or the close button hides it
-    closeButton.addEventListener('click', closeMenu);
-    menu.addEventListener('click', closeMenu);
-</script>
+    closeButton.addEventListener("click", closeMenu);
+    menu.addEventListener("click", closeMenu);
+  </script>
 </html>
