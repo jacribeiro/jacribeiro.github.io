@@ -17,16 +17,28 @@
     <script src="https://kit.fontawesome.com/13668f996f.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-dark text-slate-50 w-full">
-    <nav class="flex justify-center bg-medium">
-        <div class="container mx-auto px-4 py-4 flex items-start gap-4 md:justify-center">
+    <nav class="relative flex justify-center bg-medium">
+        <div class="container mx-auto px-4 py-4 flex items-start gap-5 md:justify-center">
+            <!-- Toggle Button for small screens -->
             <button id="menu-toggle" class="block md:hidden text-light hover:text-highlight focus:outline-none">
                 <i class="fa-solid fa-bars text-2xl"></i>
             </button>
-            <ul id="menu" class="hidden relative left-2 md:flex flex-col md:flex-row md:gap-x-6 md:py-3 font-main font-semibold text-lg">
-                <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8"><a href="#profile">Profile</a></li>
-                <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8"><a href="#skills">My Skills</a></li>
-                <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8"><a href="#portfolio">Portfolio</a></li>
-                <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8"><a href="#experience">Experience</a></li>
+    
+            <!-- Menu Overlay with full page height -->
+            <div id="menu-overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
+            
+            <ul id="menu" 
+                class="fixed top-0 left-0 w-1/2 max-w-2xl h-full bg-medium z-50 transform -translate-x-full transition-transform duration-300 ease-in-out md:relative md:w-3/4 md:translate-x-0 md:flex md:flex-row md:justify-center md:gap-x-8 pl-5 md:pl-0 md:py-3 font-main font-semibold text-xl">
+                <!-- Close Button -->
+                <button id="menu-close"
+                    class="absolute top-4 right-4 text-light hover:text-highlight md:hidden">
+                    <i class="fa-solid fa-xmark text-2xl"></i>
+                </button>
+    
+                <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8 mb-4 md:mb-0 mt-8 md:mt-0"><a href="#profile">Profile</a></li>
+                <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8 mb-4 md:mb-0"><a href="#skills">My Skills</a></li>
+                <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8 mb-4 md:mb-0"><a href="#portfolio">Portfolio</a></li>
+                <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8 mb-4 md:mb-0"><a href="#experience">Experience</a></li>
                 <li class="text-light hover:text-highlight hover:underline hover:underline-offset-8"><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -141,10 +153,10 @@
                 <h3 class="font-header font-semibold text-3xl md:text-4xl">Experience</h3>
                 <hr class="bg-highlight h-1 w-64 border-0 hidden md:block">
             </header>
-            <p class="w-4/5 container mx-auto mt-4 text-lg sm:text-2xl md:text-3xl">Here's a short summary of recent work experiences that shaped my technical and problem-solving skills:</p>
+            <p class="w-4/5 container mx-auto mt-4 text-lg sm:text-2xl">Here's a short summary of recent work experiences that shaped my technical and problem-solving skills:</p>
             <ul class="w-4/5 container mx-auto mt-4">
                 <li>
-                    <div class="flex items-center gap-3 overflow-visible">
+                    <div class="flex items-center gap-3">
                         <div class="w-4 h-4 rounded-full bg-highlight shadow-yellowGlow border border-transparent"></div>
                         <h4 class="text-xl sm:text-2xl md:text-3xl">Student Collaborator</h4>
                     </div>
@@ -158,7 +170,7 @@
                     </ul>
                 </li>
                 <li class="mt-4">
-                    <div class="flex items-center gap-3 overflow-visible">
+                    <div class="flex items-center gap-3">
                         <div class="w-4 h-4 rounded-full bg-highlight shadow-yellowGlow border border-transparent"></div>
                         <h4 class="text-xl sm:text-2xl md:text-3xl">Harvest Intern</h4>
                     </div>
@@ -196,10 +208,26 @@
 </body>
 <script defer>
     const toggleButton = document.getElementById('menu-toggle');
+    const closeButton = document.getElementById('menu-close');
     const menu = document.getElementById('menu');
+    const overlay = document.getElementById('menu-overlay');
 
+    // Open the menu
     toggleButton.addEventListener('click', () => {
-        menu.classList.toggle('hidden');
+        menu.classList.remove('-translate-x-full'); // Slide the menu in
+        menu.classList.add('translate-x-0');
+        overlay.classList.remove('hidden'); // Display the overlay
     });
+
+    // Close the menu
+    const closeMenu = () => {
+        menu.classList.remove('translate-x-0'); // Slide the menu out
+        menu.classList.add('-translate-x-full');
+        overlay.classList.add('hidden'); // Hide the overlay
+    };
+
+    // Clicking the menu or the close button hides it
+    closeButton.addEventListener('click', closeMenu);
+    menu.addEventListener('click', closeMenu);
 </script>
 </html>
